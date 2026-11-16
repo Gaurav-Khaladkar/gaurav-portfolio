@@ -62,6 +62,30 @@ export const Hero: React.FC<HeroProps> = ({ onOpenTerminal, onOpenResumeModal })
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full my-auto">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
+          {/* Profile Photo Avatar Ring */}
+          <div className="relative mb-6 group">
+            {/* Ambient pulsing multi-color glow */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-purple-600 via-indigo-500 to-cyan-400 blur-xl opacity-60 group-hover:opacity-100 transition-opacity duration-500 animate-pulse" />
+            
+            {/* Gradient border ring */}
+            <div className="relative p-1 rounded-full bg-gradient-to-tr from-purple-500 via-indigo-500 to-cyan-400 shadow-2xl">
+              <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-[#090d16] bg-[#0d1322]">
+                <img
+                  src={personal.photoUrl}
+                  alt="Gaurav Khaladkar — Cloud & DevOps Engineer"
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              {/* Online status indicator with ping */}
+              <span 
+                className="absolute bottom-1 right-1 flex items-center justify-center w-5 h-5 rounded-full bg-emerald-500 border-2 border-[#070b14] shadow-md shadow-emerald-500/50" 
+                title="Active & Open to Opportunities"
+              >
+                <span className="w-2 h-2 rounded-full bg-white animate-ping opacity-75" />
+              </span>
+            </div>
+          </div>
+
           {/* Eyebrow Badge (Reference style: "Portfolio · 2026 · Dubai, UAE") */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-950/40 border border-purple-500/30 text-purple-300 text-xs font-mono mb-6 backdrop-blur-md shadow-lg shadow-purple-950/20">
             <span className="w-2 h-2 rounded-full bg-purple-400 animate-ping" />

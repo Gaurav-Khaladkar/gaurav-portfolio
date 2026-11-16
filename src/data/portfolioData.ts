@@ -9,6 +9,7 @@ export interface PersonalInfo {
   location: string;
   status: string;
   avatarSeed: string;
+  photoUrl: string;
   resumeUrl: string;
   social: {
     github: string;
@@ -131,6 +132,7 @@ export const portfolioData = {
     location: 'Pune, Maharashtra, India',
     status: 'Cloud Engineer @ Matfly Solutions · Open to Opportunities',
     avatarSeed: 'gaurav-devops-avatar',
+    photoUrl: './images/gaurav-khaladkar.jpg',
     resumeUrl: '/resume/Gaurav_Khaladkar_Resume.pdf',
     social: {
       github: 'https://github.com/Gaurav-Khaladkar',

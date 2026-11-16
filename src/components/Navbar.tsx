@@ -137,9 +137,9 @@ export const Navbar: React.FC<NavbarProps> = ({
             href="#home"
             className="group flex items-center gap-2.5 text-slate-100 no-underline transition-transform"
           >
-            <div className="relative flex items-center justify-center w-8 h-8 rounded-lg bg-purple-600/20 border border-purple-500/40 group-hover:border-purple-400 transition-colors">
-              <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping absolute opacity-75" />
-              <span className="w-2 h-2 rounded-full bg-emerald-400 relative z-10" />
+            <div className="relative flex items-center justify-center w-8 h-8 rounded-full overflow-hidden border border-purple-500/50 group-hover:border-cyan-400 transition-colors shadow-md bg-[#0d1322]">
+              <img src={portfolioData.personal.photoUrl} alt={portfolioData.personal.name} className="w-full h-full object-cover object-top" />
+              <span className="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-emerald-400 border border-[#070b14]" />
             </div>
             <div className="flex flex-col">
               <span className="font-semibold text-sm tracking-tight text-slate-100 group-hover:text-purple-300 transition-colors">
