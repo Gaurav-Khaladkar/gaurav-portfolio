@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bimBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c18" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bimBg)" />
+  
+  <!-- Isometric 3D Grid & Structural Blueprint -->
+  <g stroke="#3b82f6" stroke-width="1.2" opacity="0.35">
+    <line x1="200" y1="350" x2="600" y2="350" />
+    <line x1="250" y1="380" x2="650" y2="380" />
+    <line x1="150" y1="320" x2="550" y2="320" />
+    <line x1="200" y1="350" x2="350" y2="200" />
+    <line x1="400" y1="350" x2="550" y2="200" />
+    <line x1="600" y1="350" x2="750" y2="200" />
+  </g>
+
+  <!-- Isometric Building Wireframe -->
+  <polygon points="350,180 480,110 610,180 480,250" fill="#1e293b" stroke="#06b6d4" stroke-width="2" opacity="0.8" />
+  <polygon points="350,180 480,250 480,360 350,290" fill="#0f172a" stroke="#8b5cf6" stroke-width="2" opacity="0.8" />
+  <polygon points="480,250 610,180 610,290 480,360" fill="#1e1b4b" stroke="#3b82f6" stroke-width="2" opacity="0.8" />
+
+  <!-- Measurement annotations -->
+  <line x1="330" y1="185" x2="330" y2="285" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4 4" />
+  <text x="320" y="240" font-family="monospace" font-size="12" fill="#fbbf24" text-anchor="end">h: 18.4m</text>
+
+  <!-- Title Badge -->
+  <rect x="40" y="40" width="340" height="36" rx="8" fill="#1e293b" stroke="#06b6d4" stroke-width="1.5" opacity="0.9" />
+  <text x="55" y="63" font-family="sans-serif" font-size="14" fill="#f1f5f9" font-weight="600">Cloud-native 5D BIM &amp; Takeoff Platform</text>
+  <text x="760" y="63" font-family="monospace" font-size="12" fill="#a855f7" text-anchor="end">2D/3D BIM Engine · AWS S3</text>
+</svg>
